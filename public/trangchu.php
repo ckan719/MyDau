@@ -9,9 +9,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
 
     <div class="container">
         <div class="menu-top">
@@ -171,65 +173,63 @@
                     <h4 class="tieude">SỰ KIỆN</h4>
                 </div>
                 <div class="sk_content">
-                    <?php
-                        $sql = "SELECT * from sukien";
+                <?php
+                        $con = mysqli_connect("localhost","root","","datadau") or die("Fail Connect");
+                        $query = "SELECT * from sukien order by id desc";
+                        $rs = $con->query($query);
+                        if($row = mysqli_fetch_array($rs)){
 
-                    ?>
+                ?>
                     <div class="sk_left" data-aos="zoom-in">
                         <div class="sk_img">
-                            <img src="..\image\image4.jpg" alt="">
-                            <span class="sk_time">Day time</span>
+                            <img src="..\image\<?php echo $row[1]; ?>" alt="">
+                            <span class="sk_time" ><i class="fal fa-history"></i><?php echo $row[3]; ?></span>
                         </div>
                         <div class="sk_contentt">
-                            ST here
+                           <h3><a href=""><?php echo $row[2]; ?></a></h3>
+                            <p><?php echo $row[4] ?></p>
                         </div>
+
+                        <?php }?>
                     </div>
                     <div class="sk_mid" data-aos="zoom-in">
+                    <?php  if($row = mysqli_fetch_array($rs)){ ?>
                         <div class="sk_img">
-                            <img src="..\image\image4.jpg" alt="">
-                            <span class="sk_time">Day time</span>
+                            <img src="..\image\<?php echo $row[1]; ?>" alt="">
+                            <span class="sk_time"><i class="fal fa-history"></i><?php echo $row[3]; ?></span>
                         </div>
                         <div class="sk_contentt">
-                            ST here
+                            <h3><a href=""><?php echo $row[2]; ?></a></h3>
+                            <p><?php echo $row[4] ?></p>
                         </div>
-
+                    <?php } ?>
                     </div>
+                    
                     <div class="sk_right" data-aos="zoom-in">
+                        <?php
+                            for($i = 0; $i< 4; ++$i){
+                                if($row = mysqli_fetch_assoc($rs)){
+                                    $querydate = "SELECT DAY('".$row['thoigian']."')";
+                                    $querymonth = "SELECT MONTH('".$row['thoigian']."')";
+                                    $rsdate = $con->query($querydate);
+                                    $rsmonth = $con->query($querymonth);
+                                    $row1 = mysqli_fetch_array($rsdate);
+                                    $row2 = mysqli_fetch_array($rsmonth);              
+                            
+                        ?>
                         <div class="sk_sidebar">
                             <div class="timesk">
-                                <span>Ngày</span>
+                                <span class="spandate"><?php echo $row1[0] ; ?></span>
                                 <hr>
-                                <span>Tháng</span>
+                                <span class="spanmonth">Tháng <?php echo $row2[0] ; ?></span>
                             </div>
-                            <p>ST here</p>
+                            <p><?php echo $row['tieude'] ?></p>   
                         </div>
-                        <div class="sk_sidebar">
-                            <div class="timesk">
-                                <span>Ngày</span>
-                                <hr>
-                                <span>Tháng</span>
-                            </div>
-                            <p>ST here</p>
-                        </div>
-                        <div class="sk_sidebar">
-                            <div class="timesk">
-                                <span>Ngày</span>
-                                <hr>
-                                <span>Tháng</span>
-                            </div>
-                            <p>ST here</p>
-                        </div>
-                        <div class="sk_sidebar">
-                            <div class="timesk">
-                                <span>Ngày</span>
-                                <hr>
-                                <span>Tháng</span>
-                            </div>
-                            <p>ST here</p>
-                        </div>
-
+                        <?php
+                                }
+                            } 
+                        ?> 
                     </div>
-
                 </div>
                 <div style="clear: both;"></div>
                 <div class="tt_viewmore" data-aos="zoom-in">
