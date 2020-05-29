@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    margin: auto;
+    width: 90%;
+    padding-top: 20px;
+    height: 200px;
+    padding-left: 10%;
+    background-color: rgb(255, 253, 232);
+}
+
+.hd-l {
+    width: 100%;
+}
+
+.hdl-l img {
+    float: left;
+    width: 195px;
+    height: auto;
+}
+
+.hdl-r {
+    width: 70%;
+    float: left;
+    height: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.hdl-r h2 {
+    top: 70px;
+    position: absolute;
+}
+
+.hdl-r p {
+    position: absolute;
+    top: 110px;
+    left: 200px;
+}
+
+#content {
+    padding: 10px 10px 0px 0px;
+}
+
+#menu {
+    height: 50px;
+    padding-left: 230px;
+    background-color: deepskyblue;
+}
+
+#menuleft {
+    float: left;
+}
+
+li {
+    list-style: none;
+}
+
+#menuleft ul li {
+    float: left;
+}
+
+#login ul li {
+    float: left;
+    list-style: none;
+}
+
+#menuleft ul li a {
+    padding: 10px;
+    height: 29px;
+    line-height: 29px;
+    display: block;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    color: white;
+}
+
+#menuleft ul li a:hover {
+    font-size: 17px;
+    color: darkorange;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+#login ul li a {
+    padding: 10px;
+    height: 29px;
+    line-height: 29px;
+    display: block;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    color: white;
+}
+
+#login ul li a:hover {
+    font-size: 17px;
+    color: darkorange;
+}
+
+#login {
+    float: right;
+    margin-right: 30px;
+}
+
+#ct_func {
+    float: left;
+    box-sizing: border-box;
+}
+
+#ct_func ul {
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+#ct_func ul li {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 220px;
+}
+
+#ct_func ul li a {
+    transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+}
+
+.span {
+    width: 20px;
+    background-color: hotpink;
+}
+
+#ct_func ul li a:hover {
+    border-left: 10px solid tomato;
+    color: lightcoral;
+}
