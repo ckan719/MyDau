@@ -1,2 +1,1 @@
-import database vào
-tập mà dùng nha, t cũng tập dùng thôi :))
+đứa nào vừa sửa thì note lại tại đây nha
