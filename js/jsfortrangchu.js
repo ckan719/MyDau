@@ -107,7 +107,7 @@ $(document).ready(function() {
         }, 3000);
     });
     $('#portal').on('click', function() {
-        window.location.assign("../public/dauportal.php");
+        window.location.assign("../public/admin.php");
     });
 
     $(window).on('scroll', function() {

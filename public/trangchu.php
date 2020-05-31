@@ -46,7 +46,7 @@
         <div class="login">
             <div>
                 <i class="far fa-home"></i>
-                <span id="portal">Dau Portal</span>
+                <span id="portal">Login</span>
             </div>
         </div>
         <div class="header">
@@ -126,7 +126,7 @@
                 <div class="tt_infor">
                     <?php
                         $con = mysqli_connect("localhost","root","","datadau") or die("Fail Connect");
-                        $query = "SELECT * from tintuc limit 0,3";
+                        $query = "SELECT * from tintuc order by id desc";
                         $rs = $con->query($query);
                         if($row = mysqli_fetch_array($rs)){
 

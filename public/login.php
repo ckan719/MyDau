@@ -1,31 +1,64 @@
-<!DOCTYPE html>
 <?php
     session_start();
 ?>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="..\src\style.css">
-    </head>
-    <body>
-        <div id="container">
-            <div id="content">
-                <div id="icon">
-                    <img id="logo" src="..\image\logo.png" alt="logo">
-                </div>
-                <div id="signin"><h2>Sign In</h2></div>
-                <div id="log">
-                    <form method="POST" onsubmit="myFcsubmit()">
-                        <input class="input" placeholder="User Name" type="text" id="username" name="name" required><br>
-                        <input class="input" placeholder="Password" type="password" id="password" name="pass" required><br>
-                        <input name="f_click" id="submit" type="submit" value="Login">
-                    </form>
-                </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../src/styleforlogin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+			
+        <header>Login</header>
+        <form action="../xuli/handlingforlogin.php" method="POST">
+            <div class="input-field">
+                <input name="username" type="text" required>
+                <label for="">Username</label>
+            </div>
+            <div class="input-field" >
+                <input name="pass" class="pw" type="password"required>
+                <span class="show"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                <label for="">Password</label>
+            </div>
+            <div class="button">
+                <div class="inner">
+                    <button class="button1" type="submit" name = login-submit>Login</button>
+                </div>               
+            </div>
+        </form>
+        <div class="conten">Or login with</div>
+        <div class="link">
+            <div class="facebook">
+                <i class="fa fa-facebook-square" aria-hidden="true"><span>Facebook</span></i>
+            </div>
+            <div class="google">
+                <i class="fa fa-google-plus-square" aria-hidden="true"><span>Google</span></i>
             </div>
         </div>
-        
-    </body>
-    <script src="..\js\handling.js"></script>
+        <div class="sigup">
+            Not a member? <a href="sigup.php">Signup now</a>
+        </div>
+    </div>
+
+    <script>
+        var x = document.querySelector('.pw');
+        var y = document.querySelector('.show');
+        y.addEventListener('click',active);
+        function active(){
+            if(x.type === 'password'){
+                x.type = 'text';
+                y.style.color = "#1DA1F2";
+            }else{
+                x.type ='password';
+                y.style.color = "#111";
+            }
+        }
+    </script>
+</body>
 </html>

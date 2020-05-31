@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php 
     session_start();
-    if(!isset($_SESSION['name'])){
-        header('Location: login.php');
+    if(!isset($_SESSION['user'])){
+        header('Location: ./login.php');
     }
 ?>
 <html>
@@ -39,7 +39,7 @@
                     <div id="login">
                         <ul>
                             <li id="in"><a href="#"><?php echo $_SESSION['name']?></a></li>
-                            <li id="out"><a href=".\out.php">Đăng xuất</a></li>
+                            <li id="out"><a href="./out.php">Đăng xuất</a></li>
                         </ul>
                     </div>
                 </div>
