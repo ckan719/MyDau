@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -83,13 +86,14 @@
             <div class="slides">
             <?php
                  $con = mysqli_connect("localhost","root","","datadau") or die("Fail Connect");
-                 $sql1 = "Select * from gioithieu limit 0,5";
+                 $sql1 = "SELECT * from gioithieu order by id desc";
                  $rs = $con->query($sql1);
                  $row = mysqli_fetch_array($rs);
             ?>
                 <div class="slide active"><img src="..\image\<?php echo $row[1]; ?>" alt=""></div>
                 <?php
-                    while($row = mysqli_fetch_array($rs)){
+                    for($i = 0; $i < 4; ++$i){
+                        $row = mysqli_fetch_array($rs);
                 ?>
                 <div class="slide"><img src="..\image\<?php echo $row[1] ?>" alt=""></div>
                 <?php

@@ -27,6 +27,16 @@
     background-color: rgb(176, 176, 241);
 }
 
+.admin a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.admin a:hover {
+    color: red;
+}
+
 .menu h2 {
     font-size: 20px;
     margin-left: 40px;
@@ -153,13 +163,15 @@
 .showhere {
     margin-top: 40px;
     width: 100%;
-    height: 470px;
+    height: 500px;
     border: 1px solid black;
     box-sizing: border-box;
+    background: rgb(204, 199, 199);
+    border-radius: 5px;
 }
 
 .showhere table {
-    padding-top: 40px;
+    padding-top: 10px;
     width: 90%;
     margin: auto;
 }
@@ -172,6 +184,16 @@
 textarea {
     width: 100%;
     height: 90%;
+    border-radius: 3px;
+    border: none;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.showhere table tr td input:hover,
+textarea:hover {
+    border: 1px solid rgb(248, 3, 3);
+    background-color: rgb(243, 236, 236);
 }
 
 .action td {
@@ -180,5 +202,22 @@ textarea {
 
 .action td button {
     margin-left: 20px;
-    width: 60px;
+    border-radius: 6px;
+    border: none;
+    width: 95px;
+    height: 28px;
+    background-color: rgb(113, 175, 230);
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.action td button:hover {
+    background-color: rgb(199, 191, 181);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    color: rgb(236, 104, 104);
 }

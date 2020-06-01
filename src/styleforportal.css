@@ -51,6 +51,9 @@
 
 #content {
     padding: 10px 10px 0px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
 }
 
 #menu {
@@ -123,6 +126,8 @@ a {
 #ct_func {
     float: left;
     box-sizing: border-box;
+    width: 17%;
+    margin-bottom: 50px;
 }
 
 #ct_func ul {
@@ -138,6 +143,19 @@ a {
 }
 
 #ct_func ul li a {
+    color: black;
+    transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+}
+
+#ct_func ul li span {
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
@@ -157,4 +175,36 @@ a {
 #ct_func ul li a:hover {
     border-left: 10px solid tomato;
     color: lightcoral;
+}
+
+#ct_func ul li span {
+    cursor: pointer;
+    display: block;
+}
+
+#ct_func ul li span:hover {
+    border-left: 10px solid tomato;
+    color: lightcoral;
+}
+
+.ct-content {
+    float: left;
+    width: 83%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.ct-content table {
+    margin: auto;
+    width: 70%;
+    height: 525px;
+}
+
+.ct-content table tr td.anh {
+    width: 90px;
+    padding-right: 70px;
+}
+
+.ct-content table tr td.anh img {
+    width: 200px;
 }

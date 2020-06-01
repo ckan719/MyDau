@@ -15,6 +15,8 @@
         }else if($row[3] === "0"){
             header('Location: ../public/dauportal.php');
         }
+    }else{
+        header('Location: ../public/login.php');
     }
 
 ?>

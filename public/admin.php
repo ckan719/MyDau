@@ -1,5 +1,10 @@
 <?php
     session_start();
+    if(!isset($_SESSION['user'])){
+        if($_SESSION['user'] != "admin"){
+            header("Location: ./login.php");
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +20,10 @@
     <div class="container">
         <div class="left">
             <div class="admin">
-                <i class="fa fa-user-circle" aria-hidden="true"></i> <a href="">Admin</a>
+                
+                    <i class="fa fa-user-circle" aria-hidden="true"></i> <a href=""><?php echo $_SESSION['name'] ?></a>
+                    <a href="./out.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                
             </div>
             <div class="menu">
                 <h2></h2>
@@ -47,7 +55,7 @@
                 </div>
             </div>
             <div class="content">
-                <h2 id = "id-name">Tin tức</h2>
+                <h2 id = "id-name">Quản lý</h2>
                 
                 <div class="form">
                     <div class="showhere">
