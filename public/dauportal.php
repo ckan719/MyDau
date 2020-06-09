@@ -29,7 +29,7 @@
                 <div id="menu">
                     <div id="menuleft" class="clmenu">
                         <ul>
-                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="../public/trangchu.php">Trang chủ</a></li>
                             <li><a href="#">Chương trình đào tạo</a></li>
                             <li><a href="#">Môn học/học phần</a></li>
                             <li><a href="#">Quy chế, quy định</a></li>

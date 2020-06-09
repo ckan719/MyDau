@@ -28,6 +28,7 @@
             <div class="menu">
                 <h2></h2>
                 <ul>
+                    <li id = "on-tc"><span>Trang chủ</span></li>
                     <li id = "on-tt"><span>Tin tức</span></li>
                     <li id = "on-sk"><span>Sự kiện</span></li>
                     <li id = "on-gt"><span>Giới thiệu</span></li>

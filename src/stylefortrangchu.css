@@ -769,7 +769,7 @@ img {
 .tn_right ul li {
     width: 100%;
     list-style: none;
-    height: 50px;
+    height: 70px;
     margin-bottom: 20px;
 }
 
@@ -898,3 +898,42 @@ span.spanmonth {
     color: red;
     cursor: pointer;
 }
+p.p-noidung {
+    font-size: 16px;
+    padding-top: 4px;
+    font-family: sans-serif;
+    color: #312b2b;
+}
+
+.conten4 .divchuaanh {
+    height: 78px;
+    width: 78px;
+    margin: auto;
+    margin-bottom: 23px;
+    margin-top: -40px;
+}
+.conten4 .divchuaanh img{
+    height: 100%;
+    width: 100%;   
+}
+.conten4 .divnoidunganh{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+.conten4 .lienlacdau{
+    display: flex;
+    width: 61%;
+    margin-left: 310px;
+}
+.conten4 .lienlacdau .fa{
+    padding-left: 131px;
+    font-size: 33px;
+}
+.conten4 .lienlacdau .phone{
+    margin-left: -79px;
+}
+.conten4 .lienlacdau .email .fa{
+    margin-left: -59px;
+}
+hr{margin: auto;}

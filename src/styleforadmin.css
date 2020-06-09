@@ -220,4 +220,5 @@ textarea:hover {
 ::-webkit-input-placeholder {
     font-style: italic;
     color: rgb(236, 104, 104);
+    padding-left: 7px;
 }

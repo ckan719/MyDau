@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 01, 2020 lúc 07:33 AM
+-- Thời gian đã tạo: Th6 09, 2020 lúc 05:02 AM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
--- Phiên bản PHP: 7.2.30
+-- Phiên bản PHP: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -88,8 +89,7 @@ INSERT INTO `sukien` (`id`, `img`, `tieude`, `thoigian`, `noidung`) VALUES
 (3, 'image3.jpg', 'Tieu de 3', '2020-05-26', 'This is value'),
 (4, 'image1.jpg', 'tieu de 4', '2020-05-23', 'This is value'),
 (5, 'image1.jpg', 'tieu de', '2020-05-12', 'This is value'),
-(6, 'image4.jpg', 'tieude new', '2020-06-11', 'this is noi dung'),
-(7, '', '', '0000-00-00', '');
+(6, 'image4.jpg', 'tieude new', '2020-06-11', 'this is noi dung');
 
 -- --------------------------------------------------------
 
@@ -113,7 +113,7 @@ CREATE TABLE `thongtin` (
 --
 
 INSERT INTO `thongtin` (`username`, `img`, `ten`, `mssv`, `ngaysinh`, `cmnd`, `gioitinh`, `diachi`) VALUES
-('user1', 'Kawai.jpg', 'nhat', '1751220075', '1999-08-21', '241861***', 'Nam', 'Đắc lắc');
+('user2', 'anhnenanime.jpg', 'Lê Sỹ Thành', '1751220074', '1999-04-04', '241824***', 'Nam', 'ĐakLak');
 
 -- --------------------------------------------------------
 

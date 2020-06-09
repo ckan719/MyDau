@@ -64,7 +64,9 @@ $(document).ready(function() {
             }
         });
     });
-
+    $('#on-tc').on('click', function() {
+        location.replace('./trangchu.php');
+    });
 
 });
 
@@ -160,7 +162,8 @@ function themGioiThieu() {
         type: "post",
         url: "../xuli/handlingthemgioithieu.php",
         data: {
-            img: str
+            img: str,
+            link: $('#limg').val()
         },
         dataType: "text",
         success: function(response) {

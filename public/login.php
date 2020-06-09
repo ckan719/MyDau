@@ -1,5 +1,17 @@
 <?php
     session_start();
+    if(isset($_SESSION['user'])){
+        $con = mysqli_connect('localhost','root','','datadau') or die('Fail');
+        $user = $_SESSION['user'];
+        $sql = "SELECT * from account where user = '$user'";
+        $rs = $con->query($sql);
+        $row = mysqli_fetch_array($rs);
+        if($row[3] == '0'){
+            header('Location: ./dauportal.php');
+        }else{
+            header('Location: ./admin.php');
+        }
+    }
 ?>
 
 <!DOCTYPE html>

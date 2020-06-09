@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -49,7 +50,7 @@
         <div class="login">
             <div>
                 <i class="far fa-home"></i>
-                <span id="portal">Login</span>
+                <span id="portal">My Dau</span>
             </div>
         </div>
         <div class="header">
@@ -248,17 +249,47 @@
                     <h3>SINH VIÊN TỐT NGHIỆP DAU</h3>
                     <ul>
                         <li><i class="fad fa-award"></i>
-                            <p>ST here</p>
+                            <p><strong>Chuyên môn giỏi</strong></p> <br>
+                            <p class = "p-noidung">Lý thuyết vững vàng, thực hành thành thạo,
+                                <span style="color:#0067ac;">
+                                    <strong>100%</strong>
+                                </span> sinh viên tốt nghiệp DAU có việc làm <br>
+                                trong năm đầu tiên.
+                            </p>
                         </li>
                         <li><i class="fad fa-award"></i>
-                            <p>ST here</p>
+                            <p><strong>Kỹ năng đa dạng</strong></p> <br>
+                            <p class = "p-noidung">Phát triển tối đa năng lực bản thân với các kỹ năng mềm cần thiết: tiếng Anh (
+                                <span style="color:#0067ac;">
+                                    <strong>IELTS 5.0</strong>
+                                </span> ), <br>
+                                 Tin học (
+                                <span style="color:#0067ac;">
+                                    <strong>MOS 750</strong>
+                                </span> ),
+                                 Sinh tồn (
+                                <span style="color:#0067ac;">
+                                    <strong>bơi 50m</strong>
+                                </span> ),...
+                            </p>
                         </li>
                         <li><i class="fad fa-award"></i>
-                            <p>ST here</p>
+                            <p><strong>Đạo đức chuẩn mực</strong></p> <br>
+                            <p class = "p-noidung">Rèn luyện trong môi trường nghiêm túc: 
+                                <span style="color:#0067ac;">
+                                    <strong>Hiếu thảo</strong>
+                                </span> với cha mẹ,
+                                <span style="color:#0067ac;">
+                                    <strong>Thượng tôn</strong>
+                                </span> pháp luật, <br>
+                                <span style="color:#0067ac;">
+                                    <strong>Tinh thần phụng sự </strong>
+                                </span> cộng đồng.
+                            </p>
                         </li>
-                        <li><i class="fad fa-award"></i>
+                        <!-- <li><i class="fad fa-award"></i>
                             <p>ST here</p>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -300,9 +331,32 @@
 
             </div>
         </div>
+        <hr  width="70%" size = "1" align="center" color = "" />
+        <div class="conten4">
+        <div class="divchuaanh" data-aos="zoom-in">
+            <a href="http://www.dau.edu.vn/"><img src="../image/logo.png" alt=""></a>
+        </div>
+        <div class="divnoidunganh" data-aos="zoom-in">
+            <p>ĐẠI HỌC KIẾN TRÚC ĐÀ NẴNG - DANANG ARCHITECTURE UNIVERSITY<p>
+        </div>
+        <div class="lienlacdau"  data-aos="zoom-out">
+            <div class="phone">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <p>Điện thoại: 0236.2210030 - 2210031 – 2210032</p>
+            </div>
+            <div class="address">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>Địa chỉ: 566 Núi Thành, Quận Hải Châu,TP. Đà Nẵng</p>
+            </div>
+            <div class="email">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                <p>Email: infor@dau.edu.vn</p>
+             </div>
+        </div>             
+    </div>
         <div class="footer" data-aos="fade-up">
             <p>Cre : TDTU</p>
-            <p>Pr : Nguyễn Công Nhật</p>
+            <p>Pr : Nhóm 5</p>
         </div>
 
     </div>
