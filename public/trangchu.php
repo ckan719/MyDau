@@ -94,11 +94,13 @@
                 <div class="slide active"><img src="..\image\<?php echo $row[1]; ?>" alt=""></div>
                 <?php
                     for($i = 0; $i < 4; ++$i){
-                        $row = mysqli_fetch_array($rs);
+                       if( $row = mysqli_fetch_array($rs)){
+
                 ?>
                 <div class="slide"><img src="..\image\<?php echo $row[1] ?>" alt=""></div>
                 <?php
-                    }
+                        }else break;
+                 }
                 ?>
             </div>
 
